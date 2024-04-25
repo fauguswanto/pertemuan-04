@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1 class="main-title">Halaman Registrasi</h1>
+    <form>
+        <table class="main-table" cellpadding="10" cellspacing="2">
+            <tr>
+                <td><label for="nama">Nama</label></td>
+                <td colspan="2"><input type="text" id="nama"></td>
+            </tr>
+            <tr>
+                <td><label for="nim">NIM</label></td>
+                <td colspan="2"><input type="number" id="nim"></td>
+            </tr>
+            <tr>
+                <td><label for="no-hp">Nomor HP</label></td>
+                <td colspan="2"><input type="number" id="no-hp"></td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat</label></td>
+                <td colspan="2"><textarea name="" id="alamat" cols="22" rows="7"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td class="gender-column">
+                    <input type="radio" name="gender" id="pria">
+                    <label for="pria">Pria</label>
+                </td>
+                <td class="gender-column">
+                    <input type="radio" name="gender" id="wanita">
+                    <label for="wanita">Wanita</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pendidikan">Pendidikan</label></td>
+                <td colspan="2">
+                    <select id="pendidikan">
+                        <option value="" disabled selected hidden>Pilih Pendidikan</option>
+                        <option value="sd">SD</option>
+                        <option value="smp">SMP</option>
+                        <option value="sma">SMA</option>
+                        <option value="d3">D3</option>
+                        <option value="s1">S1</option>
+                        <option value="s2">S2</option>
+                    </select>
+                </td>
+            </tr>
+                <tr>
+                    <td rowspan="3">Hobby</td>
+                    <td class="hobby-column">
+                        <input type="checkbox" id="hobby1">
+                        <label for="hobby1">Membaca</label>
+                    </td>
+                    <td class="hobby-column">
+                        <input type="checkbox" id="hobby2">
+                        <label for="hobby2">Menulis</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hobby-column">
+                        <input type="checkbox" id="hobby3">
+                        <label for="hobby3">Memasak</label>
+                    </td>
+                    <td class="hobby-column">
+                        <input type="checkbox" id="hobby4">
+                        <label for="hobby4">Menari</label>
+                    </td>
+                </tr>
+            <tr>
+                <td class="hobby-column">
+                    <input type="checkbox" id="hobby5">
+                    <label for="hobby5">Mendaki</label>
+                </td>
+                <td class="hobby-column">
+                    <input type="checkbox" id="hobby6">
+                    <label for="hobby6">Mengajar</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center;">
+                    <button id="submit">Submit</button>
+                    <button id="cancel">Cancel</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <footer>
+        <br>Tugas Web Programming - Pertemuan 04<br>
+        Taniafau Guswanto - 2244190018 (Teknik Informatika)<br>
+    </footer>
+</body>
+</html>
